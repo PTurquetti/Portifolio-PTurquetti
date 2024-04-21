@@ -1,0 +1,492 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    background-color: F5F5F5;
+}
+
+a{
+    text-decoration: none;
+}
+
+.pag-projeto{       /* pagina de projeto */
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.botao{        /* botao azul */
+    text-align: center; 
+    line-height: 49px;
+    width: 268px;
+    height: 49px;
+    border-radius: 45px;
+    background-color: #015865;
+    transition: all 0.3s ease;
+}
+
+.botao:hover{
+    transform: scale(1.1); /* Aumenta o tamanho em 10% */
+}
+
+
+
+.botao-invertido{  /* botao branco */
+    display: flex; 
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    width: 268px;
+    height: 49px;
+    border-radius: 45px;
+    border: 5px solid #015865; /* Cor do contorno */
+    transition: all 0.3s ease;
+}
+
+.botao-invertido:hover{
+    transform: scale(1.1); /* Aumenta o tamanho em 10% */
+}
+
+.botao-invertido p{
+    margin: 0; /* Remove a margem padrão do parágrafo */
+    color: #015865; /* Cor do texto */
+}
+
+
+
+/* FONTES */
+
+p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 18px;
+}
+
+
+h1{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 36px;
+}
+
+h2{
+    font-family: 'Arial';
+    font-style: normal;
+    font-size: 30px;
+}
+
+h3{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 24px;
+}
+
+h4{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 18px;
+}
+
+
+.negrito{
+    font-weight: bold;
+}
+
+
+
+
+/* CORES */
+
+.borda-azul{
+    
+    border-radius: 45px;
+    border: 2px solid #015865; /* Cor do contorno */
+}
+
+.fundo-azul{
+    background-color: #015865;
+}
+
+.fundo-azul-claro{
+    background-color: #A4BAB7;
+}
+
+.fundo-branco{
+    background-color: #F5F5F5;
+}
+
+.fundo-preto{
+    background-color: #080F0F;
+}
+
+.branco{
+    color: #F5F5F5;
+}
+
+.azul_claro{
+    color: #A4BAB7;
+}
+
+.azul{
+    color: #015865;
+}
+
+.laranja{
+    color: #FF6D33;
+}
+
+.preto{
+    color: #080F0F;
+}
+
+
+.sistema1{
+    color: #CCCCCC;
+}
+
+.sistema2{
+    color: #999999;
+}
+
+.sistema3{
+    color: #666666;
+}
+
+.sistema4{
+    color: #333333;
+}
+
+
+
+/* Icone */
+
+.icone-redes{
+    width: 48px; /* Defina a largura dos ícones conforme necessário */
+    height: 48px; /* Defina a altura dos ícones conforme necessário */
+    transition: all 0.3s ease; /* Adiciona uma transição suave */
+}
+
+.icone-redes:first-child{
+    margin-left: 0; /* Remove a margem esquerda do primeiro ícone */
+}
+
+.icone-redes:last-child{
+    margin-right: 0; /* Remove a margem direita do último ícone */
+}
+
+.icone-redes:hover{
+    transform: scale(1.1); /* Aumenta o tamanho em 10% */
+}
+
+
+.container-icone {
+    padding: 15px;
+    align-items: center;
+    justify-content: center; /* Para centralizar os ícones horizontalmente */
+}
+
+.container-icone a:not(:last-child) {
+    margin-right: 80px; /* Espaçamento entre os itens do menu */
+}
+
+
+/* titulo das sessões do site */
+.titulo{
+    margin-left: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+/* DIVISORIAS */
+
+.container {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+}
+
+
+/* Menu inicial --------------------------------------------------------*/
+.menu{
+    position: fixed;
+    display: flex;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 1000; /* Fica acima dos outros itens */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+
+.menu .conteudo{
+    list-style: none;
+    padding: 0;
+}
+
+.menu .conteudo li{
+    display: inline;    /* Alinhamento */
+}
+
+.menu .conteudo li a{
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Montserrat';  /*estilo da fonte do menu */
+    font-style: normal;
+    font-size: 18px;
+    padding: 30px;
+}
+
+.menu .conteudo li a:not(:last-child){
+    margin-right: 80px; /* Espaçamento */
+}
+
+.menu .conteudo a {
+    margin: 0; /* Remover margens dos parágrafos */
+    transition: all 0.3s ease; /* Transicao */
+}
+
+.menu .conteudo a:hover{
+    transform: scale(1.1);  /* aumento de tamanho */
+}
+
+/* Inicio ----------------------------------------------------*/
+.inicio{
+    display: flex;
+    position: relative; 
+    width: 100%; 
+    height: 425px; 
+    align-items: center;        /* centralização vertical e horizontal */
+    justify-content: center;
+    margin-top: 60px;           /* margem impede que o menu inicial sobreponha o Inicio */
+}
+
+.inicio .texto{                /* textos */
+    display: inline-block;
+    width: 30%;
+    margin-left: 10%;
+    align-self: center;
+}
+
+.inicio .imagem{               /* Imagem homem */
+    display: inline-block;
+    width: 40%;
+    margin-left: 35%;
+    z-index: 1;             /* Fica acima do vetor azul */
+    transition: all 0.3s ease;
+}
+
+.img-homem{
+    width: 302px;
+    height: 302px;
+}
+
+.inicio .imagem:hover {
+    transform: scale(1.1); /* Aumenta o tamanho em 10% */
+}
+
+.inicio .vetor{             /* vetor azul no fundo da imagem */
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    width: 50%; 
+    height: 100%;
+    z-index: 0;     /* fica embaixo da imagem */
+}
+
+
+
+/* Sobre mim ------------------------------------------------*/
+.sobre{
+    width: 1038px;
+    height: 500px;
+}
+
+.sobre-info{
+    display: flex;
+    margin-top: 50px;
+}
+
+
+.sobre-info .titulo{
+    margin-right: 30%; /* Espaço entre o titulo e os icones de redes */
+}
+
+
+.sobre-paragrafo{
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.sobre-paragrafo .texto{
+    margin-right: 20px; /* Espaçamento entre o texto e o hexágono */
+}
+
+.hexagono{          /* Vetor hexagonos */
+    width: 125px;
+    height: 243px;
+}
+
+
+
+
+
+/* Projetos -----------------------------------------------*/
+
+.projetos{
+    width: 1038px;
+    height: 358px;
+    border-radius: 15px;
+    margin-top: 55px;
+    margin-bottom: 55px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* sombra */
+}
+
+
+.container-projeto{        /*container dos icones dos projetos*/
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.projeto{          /* icone de cada projeto */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 60px; 
+    transition: all 0.3s ease; /* Adiciona uma transição suave */
+}
+
+
+.projeto:hover{
+    transform: scale(1.1); /* Aumenta o tamanho em 10% */
+}
+
+.botao-projeto{
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;
+    width: 210px;
+    height: 146px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra */
+}
+
+.interior-botao-projeto{
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    width: 210px;
+    height: 60px;
+}
+
+
+
+/* Habilidades ------------------------------------------ */
+
+.habilidades{
+    width: 1038px;
+    height: 360px;
+}
+
+.habilidades .titulo{   /* Margens para o titulo da sessão */
+    margin-left: 40px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.linguagens{            
+    margin-top: 70px;   /* Distancia entre titulo e as habilidades */
+}
+
+.container-icone-habilidades{       /* Alinhamento das habilidades */
+    display: flex;
+    justify-content: center;
+}
+
+.linguagens li{             /* Alinhamento das habilidades */
+    display: inline-block;
+    padding: 0px;
+    transition: all 0.3s ease;
+}
+
+
+.linguagens li:hover{
+    transform: scale(1.1); /* Aumenta o tamanho em 10% */
+}
+
+.linguagens li h3{      /* Nome das linguagens */
+    text-align: center;
+    margin-top: 0px;
+}
+
+.icone-linguagens{      /* Icones linguagens */
+    width: 70px;
+    height: 70px;
+    margin: 0 30px;
+    transition: all 0.3s ease;
+}
+
+.icone-linguagens:hover {
+    transform: scale(1.1); /* Aumenta o tamanho em 10% */
+}
+
+/* Contato -----------------------------------------------*/
+
+.contato{
+    width: 1038px;
+    height: 350px;
+    border-radius: 15px;
+    margin-top: 55px;
+    margin-bottom: 55px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra */
+}
+
+.conteudo-contato {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente os elementos */
+    position: absolute;
+}
+
+
+.infos-contato{
+    display: flex;
+    align-items: center; /* Alinha verticalmente os elementos */
+    justify-content: space-between; /* Distribui os elementos horizontalmente */
+}
+
+.infos-contato .textos{
+    margin-left: 100px;
+}
+
+.botoes-contato{
+    justify-content: flex-end;
+    margin-right: 100px;
+}
+
+
+
+/* Rodapé ------------------------------------------------------*/
+.rodape{
+    text-align: center;
+}
+
+#nome-rodape{
+    margin-top: 60px;
+}
+
+#copyright{
+    margin-bottom: 10px;
+}
+
+
